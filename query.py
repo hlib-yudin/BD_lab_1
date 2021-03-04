@@ -20,7 +20,7 @@ cursor.execute('DROP TABLE IF EXISTS tbl_zno_data;')
 conn.commit()
 
 
-def create_table(f):
+def create_table():
     """Створює таблицю для даної лабораторної роботи. Повертає заголовок csv-файлу. 
     f -- назва csv-файлу з даними."""
     with open("Odata2019File.csv", "r", encoding="cp1251") as csv_file:
